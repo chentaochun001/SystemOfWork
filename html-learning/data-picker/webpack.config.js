@@ -21,8 +21,12 @@ module.exports = {
             {
                 test: /\.js/,
                 exclude: /node_modules/,  // 不管node_modules这个文件夹
-                loaders: ["babel-loader", "eslint-loader"]
-
+                loader: "babel-loader"
+            },
+            {
+                test: /\.hbs/,
+                exclude: /node_modules/,
+                loader: "handlebars-loader"
             }
         ]
     },
@@ -36,6 +40,5 @@ module.exports = {
             ignored: /node_modules|dist|build|docs|css/,
             // 每秒监测文件
             poll: 1000
-        }
-
+    }
 }
