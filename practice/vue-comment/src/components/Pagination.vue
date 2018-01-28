@@ -1,7 +1,5 @@
 <template>
-   <div>
-      Bar
-  </div>
+  <div>Pagination</div>
 </template>
 <script>
 export default {

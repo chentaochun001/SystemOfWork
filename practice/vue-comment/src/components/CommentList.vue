@@ -1,7 +1,5 @@
 <template>
-   <div>
-      Foo
-  </div>
+  <div>CommentList</div>
 </template>
 <script>
 export default {
