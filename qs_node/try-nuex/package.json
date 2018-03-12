@@ -18,8 +18,9 @@
     "babel-preset-stage-3": "^6.24.1",
     "koa": "^2.5.0",
     "koa-router": "^7.4.0",
+    "md5": "^2.2.1",
     "mongoose": "^5.0.9",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
