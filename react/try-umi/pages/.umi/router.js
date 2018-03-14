@@ -10,8 +10,8 @@ export default function() {
   return (
 <Router history={window.g_history}>
   <Switch>
-    <Route exact path="/home" component={require('../home/page.jsx').default} />
-    <Route exact path="/" component={require('../index.js').default} />
+    <Route exact path="/home" component={() => React.createElement(require('C:/Users/Amy/AppData/Local/Yarn/config/global/node_modules/umi-build-dev/lib/Compiling.js').default, { route: '/home' })} />
+    <Route exact path="/" component={() => React.createElement(require('C:/Users/Amy/AppData/Local/Yarn/config/global/node_modules/umi-build-dev/lib/Compiling.js').default, { route: '/' })} />
   </Switch>
 </Router>
   );

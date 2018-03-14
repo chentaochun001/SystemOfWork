@@ -1,8 +1,9 @@
 // 模块化
-// 有n 个reducer users.js用户模块 auth article
-import { combindeReducers } from 'redux';
+// n 个renducer 
+// userInfo.js author article
+import { combineReducers } from 'redux';
 import { users } from './users';
-const reducer = combindeReducers({
-    users 
-})
-export default reducer
+const reducer = combineReducers({
+  users
+});
+export default reducer;
