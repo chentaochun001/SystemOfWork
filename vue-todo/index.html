@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    
+</head>
+<body>
+    <!-- mvvm是往里面加组件 通过webpack 打包的js文件 向root 挂载组件就好 -->
+    <div id="root"></div>
+    <script src="./dist/js/bundle.js"></script>
+
+
+
+    <!-- font-awesome 是个技能点，解决特写问题，10%的页面要用到，所以要按需加载，不需要打包 用到就单独加一下
+    要减少http数，可以单独的打包，dist/bundle1.js... -->
+    <!-- normalize 不是一定要打包的。
+    要打包需要以下几个概念：
+    这个项目是不是整站开发，若是，则打包比较多。一般是模块化的开发，有很多个/dist 目录
+    对通用性的模块，不要乱打包，这样会导致资源的重复加载 -->
+    <!-- #app 是vue react 样式的渲染脚本 -->
+    <!-- <div id="app" class="container"> -->
+        <!-- 组件化需要mvvm 的框架支持 vue react也需要mvvm的框架支持 -->
+        <!-- <todo-header /> -->
+        <!-- <div class="todo-wrapper">
+            <div class="todo-header"> -->
+                <!-- 遮罩层 -->
+                <!-- <div class="overlay"></div>
+                <time class="clearfix">
+                    <span class="day">2</span>
+                    <span class="dayofweek">星期二</span>
+                    <span class="month">1, 2018</span>
+                </time>
+                <div class="add-circle">
+                    <i class="fa fa-plus"></i>
+                </div>
+            </div>
+                <div class="todo-content"> -->
+                        <!-- <todo-report></todo-report> -->
+                        <!-- <div class="todo-content-title">
+                            <h2>Your tasks</h2>
+                            <p class="task-report">
+                                <span class="task-remain">0 完成</span> / 3 (任务)
+                            </p>
+                        </div>
+                </div>
+        </div> -->
+        <!-- stylus webpack
+        .styl node_modules
+        /.styl/ loader css -->
+    <!-- </div> -->
+</body>
+</html>
